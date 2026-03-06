@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo | Películas y Juegos de Dominio Público</title>
+    <style>
+        :root {
+            --fondo: #090b13;
+            --tarjeta: #1a1d29;
+            --dorado: #f9f9f9;
+            --azul-brillante: #0063e5;
+        }
+        body {
+            background-color: var(--fondo);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 20px 50px;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+        }
+        h1 { color: var(--azul-brillante); letter-spacing: 5px; font-size: 2rem; }
+        
+        .seccion { padding: 20px 50px; }
+        h2 { font-size: 1.2rem; color: #a0a0a0; margin-bottom: 15px; }
+
+        .contenedor-carteleras {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .pelicula {
+            background: var(--tarjeta);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s, border 0.3s;
+            border: 3px solid transparent;
+            cursor: pointer;
+        }
+
+        .pelicula:hover {
+            transform: scale(1.05);
+            border: 3px solid var(--dorado);
+        }
+
+        .pelicula img { width: 100%; height: 270px; object-fit: cover; }
+        .pelicula-info { padding: 10px; text-align: center; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MUNDO</h1>
+    </header>
+
+    <div class="seccion">
+        <h2>RECOMENDADOS PARA TI</h2>
+        <div class="contenedor-carteleras">
+            
+            <div class="pelicula">
+                <img src="https://m.media-amazon.com/images/M/MV5BNjE5MzYwMzYxN15BMl5BanBnXkFtZTgwOTk4MTc0MDE@._V1_.jpg" alt="Nosferatu">
+                <div class="pelicula-info">Nosferatu (1922)</div>
+            </div>
+
+            <div class="pelicula">
+                <img src="https://m.media-amazon.com/images/I/71Yy3I0+pOL._AC_SL1000_.jpg" alt="Metropolis">
+                <div class="pelicula-info">Metrópolis (1927)</div>
+            </div>
+
+            </div>
+    </div>
+
+</body>
+</html>
